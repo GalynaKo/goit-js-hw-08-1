@@ -1,9 +1,7 @@
-// Add imports above this line
 import { galleryItems } from './gallery-items';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-// Change code below this line
-//const SimpleLightbox = require('simplelightbox');
+
 console.log(galleryItems);
 const galleryEl = document.querySelector('.gallery');
 
@@ -25,7 +23,7 @@ console.log(galleryEl);
 //Посмотри в документации секцию «Options» и добавь отображение подписей к
 //изображениям из атрибута alt.Пусть подпись будет снизу и появляется
 //через 250 миллисекунд после открытия изображения.
-const moove = new SimpleLightbox('ul.gallery a', {
+const moove = new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
   captionsDelay: 250,
