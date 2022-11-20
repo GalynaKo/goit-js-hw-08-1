@@ -22,14 +22,8 @@ function imageEl({ preview, original, description }) {
   `;
 }
 galleryEl.innerHTML = ('afterbegin', createCards);
-//galleryEl.addEventListener(createCards);
-
 console.log(galleryEl);
-//Посмотри в документации секцию «Options» и добавь отображение подписей к
-//изображениям из атрибута alt.Пусть подпись будет снизу и появляется
-//через 250 миллисекунд после открытия изображения.
-const moove = new SimpleLightbox('gallery a', {
-  captions: true,
+const moove = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
-  captionsDelay: 250,
+  captionDelay: 250,
 });
