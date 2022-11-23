@@ -13,7 +13,7 @@ console.log();
 //Добавь в проект библиотеку lodash.throttle и сделай так,
 // чтобы время воспроизведения обновлялось в хранилище не чаще чем раз в секунду.
 
-player.on(('timeupdate', throttle(onTimeUpdate, 1000)));
+player.on('timeupdate', throttle(onTimeUpdate, 1000));
 player.setCurrentTime(currentTime);
 
 player.on('play', function () {

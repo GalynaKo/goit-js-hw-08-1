@@ -14,7 +14,7 @@ refs.formEl.addEventListener('input', throttle(onInput, 500));
 const KEY_FORM_VALUE = 'feedback-form-state';
 let formData = {};
 if (localStorage.getItem(KEY_FORM_VALUE)) {
-  //formData = JSON.parse(localStorage.getItem(KEY_FORM_VALUE));
+  formData = JSON.parse(localStorage.getItem(KEY_FORM_VALUE));
   refs.emailEl.value = formData.email;
   refs.textEl.value = formData.message;
 }
