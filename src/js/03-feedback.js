@@ -17,6 +17,8 @@ if (localStorage.getItem(KEY_FORM_VALUE)) {
   formData = JSON.parse(localStorage.getItem(KEY_FORM_VALUE));
   refs.emailEl.value = formData.email;
   refs.textEl.value = formData.message;
+} else {
+  refs.emailEl.value = formData.email;
 }
 //1*Отслеживай на форме событие input, и каждый раз записывай
 // в локальное хранилище объект с полями email и message,
